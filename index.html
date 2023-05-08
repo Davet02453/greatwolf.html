@@ -2,9 +2,11 @@
 <html lang="en">
     <head>
         <meta name="description" content="Confirmation email ">
-        <meta charset="UTF-8"/>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-        <meta name="viewport" content="width=device-width, initial-scale=.4"/>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" media="(prefers-color-scheme: light)" content="#F6F7F8"><!--trying dark mode -->
+        <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#111317"><!--trying dark mode -->
         <title>Great wolf </title>
         <style>
             .container{
@@ -15,24 +17,29 @@
                 background-color: #fafafafa;
             }
             @media only screen and (max-width: 480px) {
-            .wrapper {
+            .container {
                 width: 100% !important;
-                }         
+                }
+            .image {
+                width: 100% !important;
+                height: auto !important;
+            }             
             }
+            
         </style>
     </head>
     <body>    
         <!-- start of email -->
-        <table class="wrapper" width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #f6f6f6;border-bottom: 30px inset #f6f6f6;">
+        <table  class="wrapper" width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #f6f6f6;">
             <tr>
-                <td align="center">
+                <td align="center" width="100%">
                     <!-- start of container -->
-                    <table class="container" align="center" width="640px" style="background-color: #ffffff;">
+                    <table class="container" align="center" border="0" cellspacing="0" cellpadding="0" width="640px" role="presentation" style="background-color: #ffffff;">
+                        <!-- start of header -->
                         <tr>
                             <td align="center" valign="top">
-                                <!-- start of header -->
                                 <table width="640" class="header" align="center" border="0" cellspacing="0" cellpadding="0">
-                                <tr>
+                                    <tr>
                                         <td align="center">
                                             <img align="center" width="461" height="62" src="https://static.wixstatic.com/media/f17903_e0c0eb6c0c624fff925e78a25ce44d8f~mv2.jpg" alt="great-wolf-logo" style="margin: 0; border: 0; padding: 0; display: block;">
                                             <p style="font-size: 14px; margin: 0; display: block; border: none;">
@@ -41,24 +48,32 @@
                                             <img align="center" src="https://static.wixstatic.com/media/f17903_2df61de0a1a24f36883f09334dff40fc~mv2.jpg" alt="Main-image" style="max-width: 100%; height: auto; margin: 0; border: 0; padding: 0; display: block;">
                                             <p align="center" style="font-size: 32px; padding: 10px 0 0 0; margin: 0;"> Thibodeau Family </p>
                                         </td>
-                                </tr>
-                                </table>
-                                <!-- end of header -->
-                                <!-- start of thank you paragraph -->
-                                <table width="640" align="center" border="0" cellspacing="0" cellpadding="0">
-                                    <tr>
-                                        <td>
-                                            <p align="center" style=" font-size: 14px; ;line-height: 22px;"> 	
-                                                Thank you for choosing Great Wolf Lodge for your upcoming getaway. With<br> 50+ activities all under one roof, endless memories await you and your family!<br> In advance of your arrival, we'll be sharing tips and recommended activities<br> for your stay. We look forward to seeing you!
-                                            </p>
-                                            <p align="center">
-                                                <a align="center" href="https://click.email.greatwolfmail.com/?qs=7d9f1c3cf7764cccde3a47350a77ce3970f5f95ba526f00bc447b2c90c4803713888845169574e9ba6b0aed5bf1d89f0ef63f98a7efe978464d8f55aa2b08d8b" target="_blank"  style="background-color:#08787c;border:0;text-align:center;text-transform:uppercase;color:#ffffff;display:block;font-weight:700;font-size:17px;letter-spacing:.01em;line-height:15px;padding:16px 20px;text-decoration:none;border-radius: 25px;width: 270px;">View My Reservation</a>
-                                            </p> 
-                                        </td>
                                     </tr>
                                 </table>
-                                <!-- end of thank you paragraph -->
-                                <!-- start of reservation details -->
+                            </td>
+                        </tr>
+                        <!-- end of header -->
+                        <!-- start of thank you paragraph -->
+                        <tr>
+                            <td>
+                               <table width="640" align="center" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td>
+                                        <p align="center" style=" font-size: 14px; ;line-height: 22px;"> 	
+                                            Thank you for choosing Great Wolf Lodge for your upcoming getaway. With<br> 50+ activities all under one roof, endless memories await you and your family!<br> In advance of your arrival, we'll be sharing tips and recommended activities<br> for your stay. We look forward to seeing you!
+                                        </p>
+                                        <p align="center">
+                                            <a align="center" href="https://click.email.greatwolfmail.com/?qs=7d9f1c3cf7764cccde3a47350a77ce3970f5f95ba526f00bc447b2c90c4803713888845169574e9ba6b0aed5bf1d89f0ef63f98a7efe978464d8f55aa2b08d8b" target="_blank"  style="background-color:#08787c;border:0;text-align:center;text-transform:uppercase;color:#ffffff;display:block;font-weight:700;font-size:17px;letter-spacing:.01em;line-height:15px;padding:16px 20px;text-decoration:none;border-radius: 25px;width: 270px;">View My Reservation</a>
+                                        </p> 
+                                    </td>
+                                </tr>
+                            </table> 
+                            </td>
+                        </tr>
+                        <!-- end of thank you paragraph -->
+                        <!-- start of reservation details -->
+                        <tr>
+                            <td>
                                 <table class="reservation-details" width="320" align="center" border="0" cellspacing="0" cellpadding="0">
                                     <tr>
                                         <td>
@@ -157,9 +172,13 @@
                                         </td>                               
                                     </tr>
                                 </table>
-                                <!-- end of reservation details -->
-                                <!-- start park info -->
-                                <table width="640" align="center" border="0" cellspacing="0" cellpadding="0" style="background-color: #e5f1f3; font-size: 14px;">
+                            </td>
+                        </tr>
+                        <!-- end of reservation details -->
+                         <!-- start park info -->
+                        <tr>
+                            <td>
+                                 <table width="640" align="center" border="0" cellspacing="0" cellpadding="0" style="background-color: #e5f1f3; font-size: 14px;">
                                     <tr>
                                         <td>
                                             <table  align="center">
@@ -215,15 +234,12 @@
                                         </td>
                                     </tr>
                                 </table>
-                                <!-- end park info -->    
                             </td>
                         </tr>
-                    </table>
-                    <!-- end of container -->
-                    <!-- start of check boxes-->
-                    <table class="check-box" width="640" align="center" border="0" cellspacing="0" cellpadding="0" style="background-color: #ffffff;">
+                        <!-- end park info -->
+                        <!-- start of check boxes-->
                         <tr>
-                            <td>
+                            <td class="check-box" width="640" align="center" border="0" cellspacing="0" cellpadding="0" style="background-color: #ffffff;">
                                 <table align="center" border="0" cellspacing="0" cellpadding="0">
                                     <tr>
                                         <td style="border-top: 30px solid#f6f6f6; margin: 0;">
@@ -237,30 +253,30 @@
                                     </tr>
                                     <tr>
                                         <td style="font-size: 14px; padding: 0 0 0 57px;">
-                                          <label>
+                                        <label>
                                             <input type="checkbox" name="preferences" value="birthday" style="margin-right: 5px;">
                                             Looking to celebrate a birthday!
-                                          </label>
-                                          <br>
-                                          <label>
+                                        </label>
+                                        <br>
+                                        <label>
                                             <input type="checkbox" name="preferences" value="children" style="margin-right: 5px;">
                                             Want to make the most of our time with children of all ages!
-                                          </label>
-                                          <br>
-                                          <label>
+                                        </label>
+                                        <br>
+                                        <label>
                                             <input type="checkbox" name="preferences" value="young-kids" style="margin-right: 5px;">
                                             Want to make the most of our time with younger kids!
-                                          </label>
-                                          <br>
-                                          <label>
+                                        </label>
+                                        <br>
+                                        <label>
                                             <input type="checkbox" name="preferences" value="save-on-dining" style="margin-right: 5px;">
                                             Want to save on dining to make the most of our time at the lodge!
-                                          </label>
-                                          <br>
-                                          <label>
+                                        </label>
+                                        <br>
+                                        <label>
                                             <input type="checkbox" name="preferences" value="elevated-experience" style="margin-right: 5px;">
                                             Looking for an elevated experience for my family!
-                                          </label>
+                                        </label>
                                         </td>
                                     </tr>
                                     <tr>
@@ -271,13 +287,11 @@
                                 </table>
                             </td>
                         </tr>
-                    </table>
-                    <!-- end of check boxes-->
-                    <!-- start of multi section -->
-                    <table class="multi-section" width="640" align="center" border="0" cellspacing="0" cellpadding="0" style="background-color: #ffffff;">
+                        <!-- end of check boxes-->
+                        <!-- start of multi section -->
                         <tr>
                             <td>
-                                <table width="640" align="center" border="0" cellspacing="0" cellpadding="0">
+                                <table class="have-questions" width="640" align="center" border="0" cellspacing="0" cellpadding="0">
                                     <tr>
                                         <td>
                                             <table width="640" align="center" border="0" cellspacing="0" cellpadding="0">
@@ -289,16 +303,20 @@
                                                     </td>
                                                 </tr>
                                             </table>
-                                            <table>
+                                            <table align="left" width="50%" class="word-section">
                                                 <tr>
                                                     <td>
                                                         <p style="font-weight: 400; padding: 24px 0 0 57px; font-size: 14px; line-height: 24px;">
                                                             Need help planning your visit? See<br> our Guest FAQs to answer any<br> questions you have.  
                                                         </p>
                                                         <p align="center" style="padding: 0 0 0 50px;">
-                                                            <a align="center" href="https://click.email.greatwolfmail.com/?qs=7d9f1c3cf7764ccc5c6eb9cb5c4458ba67bd1bfe85d012f714e5565bda73da5f0bf0c244d263041a762b1ca18deb75d87c11dcfe69d1564a0009571a030ce3fb" target="_blank" style="background-color:#08787c;border:0;text-align:center;text-transform:uppercase;color:#ffffff;display:block;font-weight:700;font-size:16px;letter-spacing:.01em;line-height:45px;padding:0 20px;text-decoration:none;border-radius: 25px;width: 170px;">VIEW FAQS</a>
+                                                            <a align="center" href="https://click.email.greatwolfmail.com/?qs=7d9f1c3cf7764ccc0a9b2df0fda736c5b9217ed9bd7e28784882466f93e36ac09475980c3831e4ef973112eece9a6b41ad265dc92e4483fc235325acf5e41f5a" target="_blank" style="background-color:#08787c;border:0;text-align:center;text-transform:uppercase;color:#ffffff;display:block;font-weight:700;font-size:16px;letter-spacing:.01em;line-height:45px;padding:0 20px;text-decoration:none;border-radius: 25px;width: 170px;">View Faqs</a>
                                                         </p>
                                                     </td>
+                                                </tr>
+                                            </table>
+                                            <table align="right" width="50%">
+                                                <tr>
                                                     <td style="vertical-align:top; padding: 32px 0 0 47px;">
                                                         <img width="225" height="160" src="https://static.wixstatic.com/media/f17903_bfb40fdc3eec4390b93f90c181b4587d~mv2.jpg" alt="ice-cream" style=" display: block; padding: 10px;">
                                                     </td>
@@ -307,7 +325,7 @@
                                         </td>
                                     </tr>
                                 </table>
-                                <table width="640" border="0" cellspacing="0" cellpadding="0">
+                                <table class="ways-to-maximize-your-stay" width="640" border="0" cellspacing="0" cellpadding="0">
                                     <tr>
                                         <td>
                                             <table width="640" align="center" border="0" cellspacing="0" cellpadding="0">
@@ -337,14 +355,14 @@
                                         </td>
                                     </tr>
                                 </table>
-                                <table width="640" border="0" cellspacing="0" cellpadding="0">
+                                <table class="make-it-a-great-start" width="640" border="0" cellspacing="0" cellpadding="0">
                                     <tr>
                                         <td>
                                             <table width="640" align="center" border="0" cellspacing="0" cellpadding="0">
                                                 <tr>
                                                     <td style="border-top: 30px solid#f6f6f6;margin: 0;">
                                                         <p align="center" style="color: #ffffff;background: #08787c;text-align: center;padding: 7px 0 7px 0;margin: 0;">
-                                                            Have Questions?  
+                                                            Make It a Great Start 
                                                         </p>  
                                                     </td>
                                                 </tr>
@@ -369,12 +387,10 @@
                                 </table>
                             </td>
                         </tr>
-                    </table>
-                    <!-- end of multi section -->
-                    <!-- start of Footer -->
-                    <table align="center" border="0" cellspacing="0" cellpadding="0">
+                        <!-- end of multi section -->
+                        <!-- start of Footer -->
                         <tr>
-                            <td>
+                            <td align="center" border="0" cellspacing="0" cellpadding="0">
                                 <table width="640" border="0" cellspacing="0" cellpadding="0" style="background-color: #ffffff;">
                                     <tr>
                                         <td style="font-size: 14px; text-align: center;">
@@ -400,8 +416,9 @@
                                 </table>
                             </td>
                         </tr>
+                        <!-- end of footer -->
                     </table>
-                    <!-- end of footer -->
+                    <!-- end of container -->
                 </td>
             </tr>
         </table>
