@@ -5,10 +5,17 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="theme-color" media="(prefers-color-scheme: light)" content="#F6F7F8"><!--trying dark mode -->
-        <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#111317"><!--trying dark mode -->
         <title>Great wolf </title>
         <style>
+            @media (prefers-color-scheme: dark) {
+            .wrapper {
+                background-color: #2b2b2b;
+                color: #000000;
+            }
+            a {
+                color: #e6c540;
+            }
+            }
             .container{
                 font-family: Arial, Helvetica, sans-serif;
                 
@@ -17,7 +24,7 @@
                 background-color: #fafafafa;
             }
             @media only screen and (max-width: 480px) {
-            .container {
+            .have-questions {
                 width: 100% !important;
                 }
             .image {
@@ -30,7 +37,7 @@
     </head>
     <body>    
         <!-- start of email -->
-        <table  class="wrapper" width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #f6f6f6;">
+        <table role="presentation"  class="wrapper" width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #f6f6f6;">
             <tr>
                 <td align="center" width="100%">
                     <!-- start of container -->
@@ -209,7 +216,7 @@
                                             <table>
                                                 <tr>
                                                     <td>
-                                                        <img width="50" height="45" alt="bed" src="https://static.wixstatic.com/media/f17903_8f8f03541b5a4d7eb89f3a0599907ba1~mv2.webp">  
+                                                        <img width="50" height="45" alt="bed" src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fimage.email.greatwolfmail.com%2Flib%2Ffe8f13727c65027976%2Fm%2F5%2FGWL_BookingConfirmation_BedIcon_20220520.png&t=1684262294&ymreqid=cd44b82c-3ad1-534d-1c77-8e0003011900&sig=ki4dq_S9fILLKpxQ10ExvQ--~D">  
                                                     </td>
                                                     <td>
                                                         <p align="left" style="padding-left: 10px;color: #00b4cc;">
@@ -291,7 +298,7 @@
                         <!-- start of multi section -->
                         <tr>
                             <td>
-                                <table class="have-questions" width="640" align="center" border="0" cellspacing="0" cellpadding="0">
+                                <table class="have-questions" width="640" align="center" border="0" cellspacing="0" cellpadding="0" style="display: inline-block;">
                                     <tr>
                                         <td>
                                             <table width="640" align="center" border="0" cellspacing="0" cellpadding="0">
@@ -399,7 +406,7 @@
                                         </td>
                                     </tr>
                                 </table>
-                                <table width="640" style="font-size: 12px; background-color: #f6f6f6;">
+                                <table width="640" style="font-size: 12px; background-color: #f6f6f6; text-align: center;">
                                     <tr>
                                         <td>
                                             <p >*Children aged 2 and under may not be included in guest count, but they are included in the reservation.</p>
